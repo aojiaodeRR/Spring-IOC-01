@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--使用构造方法注入赋值-->
+<bean id="DI05" class="com.aojiaodeRR.DI05.Student" autowire="byType">
+    <property name="name" value="萨卡"/>
+    <property name="age" value="27"/>
+</bean>
+<bean id="DI055" class="com.aojiaodeRR.DI05.School">
+    <property name="name" value="哈尔滨工程大学"/>
+    <property name="place" value="哈尔道外区"/>
+</bean>
+</beans>
